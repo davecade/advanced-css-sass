@@ -38,22 +38,20 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 60px; }
-
-.heading-primary-main {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 35px;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.heading-primary-sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 17.4px;
-  animation: moveInRight 1s ease-out; }
+  .heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -91,6 +89,17 @@ body {
   border-radius: 100px;
   transition: all 0.2s;
   position: relative; }
+  .btn-white {
+    background-color: #fff;
+    color: #777; }
+    .btn-white::after {
+      background-color: #fff; }
+  .btn-animated {
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.75s; }
   .btn:link {
     text-transform: uppercase;
     text-decoration: none;
@@ -127,16 +136,3 @@ body {
     left: 0;
     z-index: -1;
     transition: all 0.4s; }
-
-.btn-white {
-  background-color: #fff;
-  color: #777; }
-  .btn-white::after {
-    background-color: #fff; }
-
-.btn-animated {
-  animation-name: moveInBottom;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: backwards;
-  animation-delay: 0.75s; }
